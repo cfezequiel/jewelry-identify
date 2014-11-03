@@ -1,8 +1,5 @@
 =======================================================
-Python Image-Based Jewelry Classification and Inventory
+Jewelry Identification from Images
 =======================================================
 
 TODO
-
-
-

@@ -2,4 +2,4 @@
 Jewelry Identification from Images
 =======================================================
 
-TODO
+App that demonstrates how to identify specific jewelry items using computer vision. 

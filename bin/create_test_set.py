@@ -7,7 +7,7 @@ src = sys.argv[1]
 dst = sys.argv[2]
 dst_file = 'samples.csv'
 
-files = [f for f in listdir(src) if f.find('.jpg') > 0]
+files = [f for f in listdir(src) if f.find('.png') > 0]
 
 with open(dst + '/' + dst_file, 'wb') as outfile:
     writer = csv.writer(outfile, delimiter=',')

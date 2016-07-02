@@ -7,8 +7,8 @@ import cv2
 sys.path.append('../')
 from jc.image_util import get_image_id
 
-db_file = '../data/spacers/spacers.npz'
-src_image_file = '../data/spacers/spacers_3x3.jpg'
+db_file = '../data/output.npz'
+src_image_file = '../data/001.png'
 
 # Tile image
 
@@ -97,7 +97,7 @@ dst_dir = 'tiles'
 try:
     mkdir(dst_dir)
 except OSError as e:
-    print 'Directory exists: %s' % dst_dir 
+    print 'Directory exists: %s' % dst_dir
 items = {}
 for ti in tile_images:
     (id_, nMatches) = get_image_id(ti, db_file)
@@ -114,7 +114,7 @@ for ti in tile_images:
         items[real_id] += 1
     else:
         items[real_id] = 1
-    
+
 # Report matches
 for id_, quantity in items.items():
     print '%s:%3d' % (id_, quantity)
